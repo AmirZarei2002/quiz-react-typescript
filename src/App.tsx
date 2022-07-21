@@ -11,7 +11,7 @@ export type AnswerObject = {
   correctAnswer: string;
 };
 
-const TOTAL_QUESTIONS = 10;
+const TOTAL_QUESTIONS = 20;
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -68,7 +68,7 @@ const App = () => {
     <>
     <GlobalStyle />
       <Wrapper>
-        <h1>React-typescript Book Quiz</h1>
+        <h1>React-typescript Random Quiz</h1>
         {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
           <button className="start" onClick={startTrivia}>
             Start
